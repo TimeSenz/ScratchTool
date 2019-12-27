@@ -16,6 +16,9 @@ import text2speechInsetIconURL from './text2speech/text2speech-small.svg';
 import translateIconURL from './translate/translate.png';
 import translateInsetIconURL from './translate/translate-small.png';
 
+import helloworldImage from './helloworld/helloworld.png';
+import helloworldInsetImage from './helloworld/helloworld-small.svg';
+
 import makeymakeyIconURL from './makeymakey/makeymakey.png';
 import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 
@@ -317,5 +320,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+       name: (
+            <FormattedMessage
+                defaultMessage="hello world"
+                description="Name for the 'hello world' extension"
+                id="gui.extension.helloworld.name"
+            />
+        ),
+        extensionId: 'helloWorld',
+        iconURL: helloworldImage,
+        insetIconURL: helloworldInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="hello world."
+                description="Description for the 'hello world' extension"
+                id="gui.extension.helloworld.description"
+            />
+        ),
+        featured: true
     }
 ];
